@@ -16,3 +16,24 @@ class Car {
         return regularPrice;
     }
 }
+
+// Requirement 2: Create a subclass called Truck with additional fields and methods
+class Truck extends Car {
+    int weight;
+
+    // Constructor for initializing Truck fields, including super constructor call
+    public Truck(int speed, double regularPrice, String color, int weight) {
+        super(speed, regularPrice, color);
+        this.weight = weight;
+    }
+
+    // Method to calculate the sale price with discount based on weight
+    @Override
+    public double getSalePrice() {
+        if (weight > 2000) {
+            return regularPrice * 0.9; // 10% discount
+        } else {
+            return regularPrice * 0.8; // 20% discount
+        }
+    }
+}
