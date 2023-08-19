@@ -37,3 +37,22 @@ class Truck extends Car {
         }
     }
 }
+
+// Requirement 3: Create a subclass called Ford with additional fields and methods
+class Ford extends Car {
+    int year;
+    int manufacturerDiscount;
+
+    // Constructor for initializing Ford fields, including super constructor call
+    public Ford(int speed, double regularPrice, String color, int year, int manufacturerDiscount) {
+        super(speed, regularPrice, color);
+        this.year = year;
+        this.manufacturerDiscount = manufacturerDiscount;
+    }
+
+    // Method to calculate the sale price with manufacturer discount
+    @Override
+    public double getSalePrice() {
+        return super.getSalePrice() - manufacturerDiscount;
+    }
+}
