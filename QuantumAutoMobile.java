@@ -79,7 +79,7 @@ class Sedan extends Car {
 }
 
 // Requirement 5: Create the MyOwnAutoShop class with the main method
-public class QuantumAutoTech {
+public class QuantumAutoMobile {
     public static void main(String[] args) {
         // Create instances of different classes and display sale prices
         Sedan hyperStreamSedan = new Sedan(150, 20000, "Red", 25);
