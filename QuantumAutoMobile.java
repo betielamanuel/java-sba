@@ -78,7 +78,7 @@ class Sedan extends Car {
     }
 }
 
-// Requirement 5: Create the MyOwnAutoShop class with the main method
+// Requirement 5: Create the QuantumAutoMobile class with the main method
 public class QuantumAutoMobile {
     public static void main(String[] args) {
         // Create instances of different classes and display sale prices
